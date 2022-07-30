@@ -9,8 +9,8 @@ function getFactAJAX() {
     xhr.open("GET", `http://numbersapi.com/${number}`);
     xhr.onload = function() {
         if (this.status === 200) {
-        //   console.log(this);
-        //   console.log(this.response);
+        console.log(this);
+        console.log(this.response);
         fact.style.display = "block";
         factText.innerText = this.response;
       }
