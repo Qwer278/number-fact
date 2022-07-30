@@ -6,7 +6,7 @@ function getFactAJAX() {
   let number = numberInput.value;
   if (number != "") {
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", `https://numbersapi.com/${number}`);
+    xhr.open("GET", `//numbersapi.com/${number}`);
     xhr.onload = function() {
         if (this.status === 200) {
         console.log(this);
